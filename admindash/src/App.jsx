@@ -31,49 +31,85 @@ function App() {
   return (
     <div className="flex min-h-screen">
       {/* Sidebar */}
-      <div className="bg-[#FAFAFA] w-[242px] min-h-screen p-5 flex flex-col gap-12 border-2 border-r-[#FAFAFA]">
+      <div className="bg-[#FAFAFA] w-[90px] md:w-[90px] xl:w-[242px] min-h-screen p-5 flex flex-col gap-12 border-2 border-r-[#FAFAFA]">
         <div className="bg-white">
-          <img src="./image.png"  className="bg-[#FAFAFA]"/>
+          <img src="./image.png" className="bg-[#FAFAFA] " />
         </div>
 
         <div className="flex flex-col gap-5">
-          <p className="text-[12px] leading-[18px] text-[#686868]">MAIN MENU</p>
           <div className="flex flex-col gap-5">
-            <div className="flex items-center gap-3">
-              <MdDashboard className="text-xl" />
-              <p className="text-[16px] leading-[24px] font-light text-[#686868]">Dashboard</p>
+            {/* Sidebar Item */}
+            <div className="group relative flex items-center xl:gap-3 xl:flex-row flex-col">
+              <MdDashboard className="text-2xl" />
+              {/* Label for xl */}
+              <p className="hidden xl:block text-[16px] font-light text-[#686868]">Dashboard</p>
+              {/* Tooltip for md and below */}
+              <p className="absolute left-[100%] top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1 rounded bg-gray-800 text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 xl:hidden">
+                Dashboard
+              </p>
             </div>
-            <div className="flex items-center gap-3">
-              <HiUserAdd className="text-xl" />
-              <p className="text-[16px] leading-[24px] font-light text-[#686868]">Recruitment</p>
+
+
+            <div className="group relative flex items-center xl:gap-3 xl:flex-row flex-col">
+              <HiUserAdd className="text-2xl" />
+              {/* Label for xl */}
+              <p className="hidden xl:block text-[16px] font-light text-[#686868]">Recruitment</p>
+              {/* Tooltip for md and below */}
+              <p className="absolute left-[100%] top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1 rounded bg-gray-800 text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 xl:hidden">
+                Recruitment
+              </p>
             </div>
-            <div className="flex items-center gap-3">
-              <RiCalendarScheduleFill className="text-xl" />
-              <p className="text-[16px] leading-[24px] font-light text-[#686868]">Schedule</p>
+
+            <div className="group relative flex items-center xl:gap-3 xl:flex-row flex-col">
+              <RiCalendarScheduleFill className="text-2xl" />
+              {/* Label for xl */}
+              <p className="hidden xl:block text-[16px] font-light text-[#686868]">Schedule</p>
+              {/* Tooltip for md and below */}
+              <p className="absolute left-[100%] top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1 rounded bg-gray-800 text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 xl:hidden">
+                Schedule
+              </p>
             </div>
-            <div className="flex items-center gap-3">
-              <FaUsers className="text-xl" />
-              <p className="text-[16px] leading-[24px] font-light text-[#686868]">Employee</p>
+
+            <div className="group relative flex items-center xl:gap-3 xl:flex-row flex-col">
+              <FaUsers className="text-2xl" />
+              {/* Label for xl */}
+              <p className="hidden xl:block text-[16px] font-light text-[#686868]">Employee</p>
+              {/* Tooltip for md and below */}
+              <p className="absolute left-[100%] top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1 rounded bg-gray-800 text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 xl:hidden">
+                Employee
+              </p>
             </div>
-            <div className="flex items-center gap-3">
-              <MdGroupWork className="text-xl" />
-              <p className="text-[16px] leading-[24px] font-light text-[#686868]">Department</p>
+
+            <div className="group relative flex items-center xl:gap-3 xl:flex-row flex-col">
+              <MdGroupWork className="text-2xl" />
+              {/* Label for xl */}
+              <p className="hidden xl:block text-[16px] font-light text-[#686868]">Department</p>
+              {/* Tooltip for md and below */}
+              <p className="absolute left-[100%] top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1 rounded bg-gray-800 text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 xl:hidden">
+                Department
+              </p>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col gap-5">
-          <p className="text-[12px] leading-[18px] text-[#686868]">OTHER</p>
-          <div className="flex flex-col gap-5">
-            <div className="flex items-center gap-3">
-              <TfiHeadphoneAlt className="text-xl" />
-              <p className="text-[16px] leading-[24px] font-light text-[#686868]">Support</p>
-            </div>
-            <div className="flex items-center gap-3">
-              <IoSettings className="text-xl" />
-              <p className="text-[16px] leading-[24px] font-light text-[#686868]">Settings</p>
-            </div>
+          <div className="group relative flex items-center xl:gap-3 xl:flex-row flex-col">
+            <TfiHeadphoneAlt className="text-2xl" />
+            <p className="hidden xl:block text-[16px] font-light text-[#686868]">Support</p>
+            <p className="absolute left-[100%] top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1 rounded bg-gray-800 text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 xl:hidden">
+              Support
+            </p>
           </div>
+
+          <div className="group relative flex items-center xl:gap-3 xl:flex-row flex-col">
+              <IoSettings className="text-2xl" />
+              {/* Label for xl */}
+              <p className="hidden xl:block text-[16px] font-light text-[#686868]">Settings</p>
+              {/* Tooltip for md and below */}
+              <p className="absolute left-[100%] top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1 rounded bg-gray-800 text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 xl:hidden">
+                Settings
+              </p>
+            </div>
         </div>
       </div>
 
