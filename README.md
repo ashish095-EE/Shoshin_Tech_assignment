@@ -112,10 +112,16 @@ http://localhost:3000
 🖼️ Screenshots
 
 Desktop View (xl)
+![image](https://github.com/user-attachments/assets/c200fd0d-5a3c-4121-8299-2402ba12633b)(1440 X 900)
 
 
 
-Mobile View (md)
+
+
+
+
+Tablet View (md)
+![Screenshot 2025-01-15 120612](https://github.com/user-attachments/assets/32e2a495-327d-414f-bd2b-eeeee8c25620)(834 X 1194)
 
 
 
