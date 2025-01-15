@@ -1,4 +1,5 @@
 Admin Dashboard UI
+LINK TO THE ASSIGNMENT: https://ashish095-ee.github.io/Shoshin_Tech_assignment/
 
 🌟 Project Overview
 
