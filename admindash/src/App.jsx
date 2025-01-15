@@ -124,16 +124,16 @@ function App() {
           <div className="flex flex-row gap-5 items-center ml-10">
             <IoIosNotifications className="text-xl flex-shrink-0 h-[24px] w-[24px]" />
             <MdMessage className="text-xl flex-shrink-0 h-[24px] w-[24px]" />
-            <img src="vite.svg" className="rounded-full bg-slate-950 h-[42px] w-[42px] flex-shrink-0" />
+            <img src="ash.jpg" className="rounded-full bg-slate-950 h-[42px] w-[42px] flex-shrink-0" />
             <p className="flex-shrink-0 text-[16px] leading-[24px] font-semibold">Jhon Doe</p>
             {/* dropDown */}
           </div>
         </div>
 
         {/* Dashboard Content */}
-        <div className="p-10 flex flex-wrap gap-4">
+        <div className="p-10 flex flex-wrap items-center gap-4">
           {/* Left Section */}
-          <div className="flex-1 flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
             <div className="h-[62px] w-full">
               <h1 className="text-[24px] leading-[42px] font-semibold">Dashboard</h1>
             </div>
